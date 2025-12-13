@@ -81,89 +81,45 @@ export default function Home() {
 
           {/* Reduced spacing from space-y-8 to space-y-4 to fit content better */}
           <div className="flex-1 flex flex-col justify-center gap-5">
-
- {/* Job 1 */}
-
+            {/* Job 1 */}
             <div className="group/item transition-all duration-300 hover:translate-x-2 group-hover/list:opacity-40 group-hover/list:hover:opacity-100">
-
               <div className="flex justify-between items-start mb-1">
-
                 <div>
-
                   <h3 className="text-xl font-bold text-white group-hover/item:text-[#ff6522] transition-colors">Software Engineer 2</h3>
-
                   <p className="text-gray-400 font-bold text-m">Lloyds Banking Group</p>
-
                 </div>
-
                 <span className="text-gray-500 text-xs bg-white/5 px-2 py-1 rounded border border-white/5">2025 - Present</span>
-
               </div>
-
               <p className="text-gray-500 text-sm  max-w-md">Leading backend architecture migration and optimizing database queries for high-scale transactions.</p>
-
             </div>
-
-
-
             <div className="w-full h-px bg-white/5"></div>
-
-
 
             {/* Job 2 */}
-
             <div className="group/item transition-all duration-300 hover:translate-x-2 group-hover/list:opacity-40 group-hover/list:hover:opacity-100">
-
               <div className="flex justify-between items-start mb-1">
-
                 <div>
-
                   <h3 className="text-xl font-bold text-white group-hover/item:text-[#ff6522] transition-colors">Software Engineer</h3>
-
                   <p className="text-gray-400 font-bold text-m">Bank of America</p>
-
                 </div>
-
                 <span className="text-gray-500 text-xs bg-white/5 px-2 py-1 rounded border border-white/5">2022 - 2025</span>
-
               </div>
-
               <p className="text-gray-500 text-sm max-w-md">Developed React-based dashboard components and integrated REST APIs for real-time data visualization.</p>
-
             </div>
-
-
 
             <div className="w-full h-px bg-white/5"></div>
 
-
-
             {/* Job 3 */}
-
             <div className="group/item transition-all duration-300 hover:translate-x-2 group-hover/list:opacity-40 group-hover/list:hover:opacity-100">
-
               <div className="flex justify-between items-start mb-1">
-
                 <div>
-
                   <h3 className="text-xl font-bold text-white group-hover/item:text-[#ff6522] transition-colors">FullStack Developer Intern</h3>
-
                   <p className="text-gray-400 font-bold text-m">Virtusa</p>
-
                 </div>
-
                 <span className="text-gray-500 text-xs bg-white/5 px-2 py-1 rounded border border-white/5">2022</span>
-
               </div>
-
               <p className="text-gray-500 text-sm max-w-md">Developed React-based dashboard components and integrated REST APIs for real-time data visualization.</p>
-
-
-
             </div>
-
           </div>
-
         </div>
 
         {/* --- Card: Email --- */}
@@ -176,10 +132,10 @@ export default function Home() {
           </div>
           <svg className="absolute -bottom-4 -right-4 w-48 h-48 text-white/5 group-hover:text-[#ff6522]/10 transition-colors transform -rotate-12" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
           <div className="relative z-10 mt-2">
-            <h3 className="text-3xl md:text-4xl font-bold mb-2 text-white">Get in touch</h3>
-            <p className="text-gray-400 group-hover:text-[#ff6522] transition-colors flex items-center gap-2 text-sm md:text-lg">
+            <h3 className="text-3xl md:text-5xl font-bold mb-2 text-white">Get in touch</h3>
+            <p className="text-gray-400 font-bold group-hover:text-[#ff6522] transition-colors flex items-center gap-2 text-sm md:text-xl">
               akshatjalanmain@gmail.com
-              <span className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">↗</span>
+              <span className="text-xl font-normal group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">➔</span>
             </p>
           </div>
         </div>
@@ -188,7 +144,7 @@ export default function Home() {
         <div className="col-span-2 md:col-span-2 md:row-span-1 bg-[#1c1c1c] rounded-[2rem] p-6 flex flex-col justify-center border border-white/5 hover:border-white/10 transition-colors">
           <div className="flex flex-wrap gap-3 items-center">
             <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mr-2">Expertise</span>
-            {['React', 'Next.js', 'Node.js', 'Python', 'MongoDB', 'Tailwind'].map((tech) => (
+            {['React.js', 'Next.js', 'JavaScript', 'Java', 'Spring Boot', 'Node.js', 'Python', 'MongoDB', 'Tailwind', 'Copilot', 'Azure'].map((tech) => (
               <span key={tech} className="px-4 py-2 rounded-xl bg-white/5 text-gray-300 text-xs md:text-sm font-medium border border-white/5 hover:bg-white/10 hover:text-white transition-colors cursor-default">
                 {tech}
               </span>
