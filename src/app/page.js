@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#111114] text-white p-4 md:p-8 font-sans">
+    <main className="min-h-screen bg-[#111114] text-white p-3 md:p-6 font-sans">
       
       {/* MOBILE: grid-cols-2 | auto-rows-auto (Flexible height)
          DESKTOP: grid-cols-4 | auto-rows-[160px] (Fixed Bento height)
       */}
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:auto-rows-[160px]">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:auto-rows-[160px]">
 
         {/* ==================== ROW 1 & 2 ==================== */}
 
@@ -16,10 +16,10 @@ export default function Home() {
         {/* Mobile: Order 2 (After Avatar) | Desktop: Order None (1st) */}
         <div className="order-2 md:order-none col-span-2 md:col-span-2 md:row-span-2 bg-[#18181b] rounded-[2rem] p-8 flex flex-col justify-between border border-white/5 hover:border-white/15 transition-colors relative overflow-hidden group">
           <div className="relative z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[#ff6522] text-white font-semibold text-sm mb-9 shadow-lg shadow-orange-900/20">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#ff6522] text-white font-semibold text-sm mb-4 md:mb-9 shadow-lg shadow-orange-900/20">
               About
             </span>
-            <h1 className="text-m md:text-3xl font-medium leading-relaxed text-gray-200">
+            <h1 className="text-lg md:text-3xl font-medium leading-relaxed text-gray-200">
               A Software developer with expertise in <span className="text-white font-bold">ReactJS & Java</span>, complemented by strong <span className="text-white font-bold">Python</span> skills. Specialized in crafting intuitive UI/UX designs.
             </h1>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
           className="order-3 md:order-none col-span-1 md:col-span-1 md:row-span-1 bg-[#18181b] rounded-[2rem] p-6 flex items-center justify-between border border-white/5 hover:bg-[#1a1a1a] hover:scale-[1.02] transition-transform cursor-pointer group relative overflow-hidden min-h-[140px]"
         >
           <div className="flex flex-col justify-center">
-            <p className="text-sm text-gray-400 font-bold uppercase tracking-wider mb-1">Resume</p>
+            <p className="text-base text-gray-400 font-bold uppercase tracking-wider mb-1">Resume</p>
             <h3 className="text-sm md:text-2xl font-bold text-white group-hover:text-[#ff6522] transition-colors">Download</h3>
           </div>
           <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-[#ff6522] group-hover:text-white transition-all">
