@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#111114] text-white p-3 md:p-6 font-sans">
-      
+
       {/* MOBILE: grid-cols-2 | auto-rows-auto (Flexible height)
          DESKTOP: grid-cols-4 | auto-rows-[160px] (Fixed Bento height)
       */}
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:auto-rows-[160px]">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 md:auto-rows-[160px]">
 
         {/* ==================== ROW 1 & 2 ==================== */}
 
@@ -29,8 +29,8 @@ export default function Home() {
         {/* Mobile: Order 1 (Top) | Desktop: Order None (2nd) */}
         <div className="order-1 md:order-none col-span-2 md:col-span-1 md:row-span-2 bg-[#18181b] rounded-[2rem] p-6 flex flex-col items-center justify-center gap-6 border border-white/5 hover:border-white/15 transition-colors group relative overflow-hidden">
           <div className="relative mb">
-             {/* REVERTED SIZE: w-32 h-40 (Mobile) | md:w-60 md:h-55 (Desktop) */}
-            <div className="w-60 h-40 md:w-60 md:h-55 rounded-[1.4rem] overflow-hidden transition-transform duration-500 relative">
+            {/* REVERTED SIZE: w-32 h-40 (Mobile) | md:w-60 md:h-55 (Desktop) */}
+            <div className="w-80 h-44 md:w-60 md:h-55 rounded-[1.4rem] overflow-hidden transition-transform duration-500 relative">
               <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://akshatjalan.github.io/devfolio/images/MyPic.png')" }}></div>
             </div>
           </div>
@@ -73,8 +73,9 @@ export default function Home() {
           className="order-4 md:order-none col-span-1 md:col-span-1 md:row-span-1 bg-[#0077b5] rounded-[2rem] flex items-center justify-center relative group cursor-pointer border border-white/5 hover:scale-[1.02] transition-transform min-h-[140px]"
         >
           <span className="text-7xl md:text-8xl font-bold text-white">in</span>
-          <div className="absolute top-4 right-4 bg-white/20 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-            <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+
+          <div className="absolute top-6 right-6 bg-white/20 w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 flex items-center justify-center transform -rotate-45 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-out">
+            <span className="text-white text-base leading-none pb-0.5">➔</span>
           </div>
         </a>
 
@@ -91,7 +92,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="flex-1 flex flex-col justify-center gap-5">
+          <div className="flex-1 flex flex-col justify-center gap-4">
             {/* Job 1 */}
             <div className="group/item transition-all duration-300 hover:translate-x-2 group-hover/list:opacity-40 group-hover/list:hover:opacity-100">
               <div className="flex justify-between items-start mb-1">
@@ -101,7 +102,7 @@ export default function Home() {
                 </div>
                 <span className="text-gray-400 text-xs bg-white/5 px-2 py-1 rounded border border-white/5">2025 - Present</span>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed max-w-md">Leading backend architecture migration and optimizing database queries for high-scale transactions.</p>
+              <p className="text-gray-400 text-sm leading-relaxed max-w-md">Engineered scalable React and Spring Boot modules, boosting UI performance by 35%, cutting API latency by 40%, and accelerating deployments by 50% through Azure DevOps CI/CD.</p>
             </div>
 
             <div className="w-full h-px bg-white/5"></div>
@@ -115,7 +116,7 @@ export default function Home() {
                 </div>
                 <span className="text-gray-400 text-xs bg-white/5 px-2 py-1 rounded border border-white/5">2022 - 2025</span>
               </div>
-              <p className="text-gray-400 text-sm max-w-md">Developed React-based dashboard components and integrated REST APIs for real-time data visualization.</p>
+              <p className="text-gray-400 text-sm max-w-md">Led full-stack development of a banking loan management SPA, improving client satisfaction by 60%, boosting API performance by 45%, and saving 40% analyst time through optimized workflows.</p>
             </div>
 
             <div className="w-full h-px bg-white/5"></div>
@@ -129,7 +130,7 @@ export default function Home() {
                 </div>
                 <span className="text-gray-400 text-xs bg-white/5 px-2 py-1 rounded border border-white/5">2022</span>
               </div>
-              <p className="text-gray-400 text-sm max-w-md">Developed React-based dashboard components and integrated REST APIs for real-time data visualization.</p>
+              <p className="text-gray-400 text-sm max-w-md">Built reusable export components and refactored legacy code, cutting manual effort by 50%, and improving module load times.</p>
             </div>
           </div>
         </div>
@@ -146,9 +147,11 @@ export default function Home() {
           <svg className="absolute -bottom-4 -right-4 w-48 h-48 text-white/5 group-hover:text-[#ff6522]/10 transition-colors transform -rotate-12" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
           <div className="relative z-10 mt-2">
             <h3 className="text-3xl md:text-5xl font-bold mb-2 text-white">Get in touch</h3>
-            <p className="text-gray-400 font-bold group-hover:text-[#ff6522] transition-colors flex items-center gap-2 text-sm md:text-xl break-all">
+            <p className="text-gray-400 font-bold group-hover:text-[#ff6522] transition-colors flex items-center gap-1 text-sm md:text-xl break-all">
               akshatjalanmain@gmail.com
-              <span className="text-xl font-normal group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">➔</span>
+              <span className="text-lg font-normal inline-block transform -rotate-45 group-hover:translate-x-0.5 group-hover:-translate-y-1 transition-transform duration-300 ease-out">
+                ➔
+              </span>
             </p>
           </div>
         </div>
