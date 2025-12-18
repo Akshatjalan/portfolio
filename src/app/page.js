@@ -174,7 +174,7 @@ export default function Home() {
 
         {/* --- Project 1: Amazon Redesign --- */}
         {/* Mobile: Order 8 | Desktop: Order None */}
-        <Link href="/projects/desserts" className="order-8 md:order-none col-span-2 md:col-span-1 md:row-span-3 bg-[#18181b] rounded-[2rem] p-6 flex flex-col border border-white/5 group overflow-hidden hover:border-white/15 transition-colors relative min-h-[300px]">
+        <Link href="/projects/amazon" className="order-8 md:order-none col-span-2 md:col-span-1 md:row-span-3 bg-[#18181b] rounded-[2rem] p-6 flex flex-col border border-white/5 group overflow-hidden hover:border-white/15 transition-colors relative min-h-[300px]">
           <div className="flex justify-between items-start mb-4 relative z-10">
             <span className="px-4 py-1.5 rounded-full bg-[#ff6522] text-white font-semibold text-xs shadow-lg shadow-orange-900/20">
               Amazon Redesign
@@ -206,16 +206,21 @@ export default function Home() {
           {/* Floating Card Image */}
           <div className="mt-12 flex-1 relative flex items-end justify-center perspective-1000 h-48 md:h-auto">
             <div className="w-[90%] h-full md:h-[120%] bg-gray-800 rounded-t-xl shadow-2xl overflow-hidden transform translate-y-8 group-hover:translate-y-2 transition-all duration-500 ease-out border-t-2 border-x-2 border-white/5">
-              <div className="absolute inset-0 bg-cover bg-top"
-                style={{ backgroundImage: "url('https://github.com/Akshatjalan/DevFreelance/raw/master/frontend/src/assets/mockup.png')" }}>
-              </div>
+              <Image
+                src="/codelance_mockup.png"
+                alt="Amazon Redesign"
+                fill
+                className="object-cover object-top absolute inset-0"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </Link>
 
         {/* --- Project 3: Harry Potter --- */}
         {/* Mobile: Order 10 | Desktop: Order None */}
-        <Link href="/projects/jobgate" className="order-10 md:order-none col-span-2 md:col-span-1 md:row-span-3 bg-[#18181b] rounded-[2rem] p-6 flex flex-col border border-white/5 relative overflow-hidden group hover:border-white/15 transition-colors min-h-[300px]">
+        <Link href="/projects/harrypotter" className="order-10 md:order-none col-span-2 md:col-span-1 md:row-span-3 bg-[#18181b] rounded-[2rem] p-6 flex flex-col border border-white/5 relative overflow-hidden group hover:border-white/15 transition-colors min-h-[300px]">
           <div className="absolute top-6 left-6 z-10">
             <span className="px-4 py-1.5 rounded-full bg-[#ff6522] text-white font-semibold text-xs shadow-lg shadow-orange-900/20">
               Harry Potter
